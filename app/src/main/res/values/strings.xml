@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DelayedMassageServices</string>
+    <string name="buttonText">Secret Question</string>
+    <string name="button_response">Timming!</string>
+</resources>
