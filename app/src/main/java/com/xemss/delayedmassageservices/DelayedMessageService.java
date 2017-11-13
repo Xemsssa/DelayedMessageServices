@@ -40,15 +40,17 @@ public class DelayedMessageService extends IntentService {
                 wait(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
-                makeText(this, "Error start timer", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Error start timer", Toast.LENGTH_SHORT).show();
             }
 
-            String text = "default";
+//            String text = "default";
+            String text = intent.getStringExtra(EXTRA_MESSAGE);
             showText(text);
         }
     }
 
     private void showText(final String text) {
         Log.v("DelayedMessageService", "The message " + text);
+
     }
 }
